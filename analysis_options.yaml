@@ -1,0 +1,17 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/global/models/player.dart
+    - test/widget_test.dart
+  errors:
+   prefer_const_constructors: error
+   prefer_const_constructors_in_immutables: error
+   prefer_single_quotes: error
+   always_declare_return_types: error
+   invalid_assignment: info
+   argument_type_not_assignable: ignore
+
+linter:
+  rules:
+    prefer_single_quotes: true
